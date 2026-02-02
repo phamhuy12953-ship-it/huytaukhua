@@ -37,14 +37,17 @@ body {
 }
 
 .spacer {
-    /* Ép buộc màu xanh hòa lẫn màu da */
-    background: linear-gradient(to right, #a8e6cf, #ffd3b6) !important; 
-    
-    height: 8px !important;   /* Tăng độ dày một chút để dễ thấy */
-    width: 100% !important;   /* Cho tràn hết màn hình cho chắc chắn */
-    margin: 20px 0 !important;
+    /* 1. ĐỘ DÀY: Bạn muốn dày hay mỏng thì chỉnh số này (ví dụ 10px, 20px, 50px) */
+    height: 30px !important; 
+
+    /* 2. MÀU SẮC: Xanh hòa lẫn màu da (Gradient) */
+    background: linear-gradient(to right, #4ca1af, #f7bb97) !important;
+
+    /* 3. HIỂN THỊ: Đảm bảo nó không bị ẩn hay bị màu trắng đè */
     display: block !important;
-    border: none !important;  /* Xóa mọi viền trắng nếu có */
+    width: 100% !important;
+    margin: 10px 0 !important;
+    border: none !important;
 }
 
 /* Đây là phần dải màu ở cuối trang */
