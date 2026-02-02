@@ -50,7 +50,7 @@ body {
     left: 0;
     
     /* 2. Độ dày theo ý bạn (tăng/giảm số này tùy thích) */
-    height: 80px !important; 
+    height: 300px !important; 
 
     /* 3. Màu xanh - da hòa lẫn (Gradient) */
     background: linear-gradient(to right, #4ca1af, #f7bb97) !important;
