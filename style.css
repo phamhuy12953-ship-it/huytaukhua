@@ -47,3 +47,28 @@ a:hover {
     color: #ffbc67; /* Khi rê chuột vào, link sẽ đổi sang màu da */
     text-decoration: underline; /* Hiện lại gạch chân khi rê chuột */
 }
+.rainbow-link {
+    text-decoration: none; /* Bỏ gạch chân */
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+
+    /* Tạo dải màu cầu vồng */
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text; /* Cắt nền theo dáng chữ */
+    -webkit-text-fill-color: transparent; /* Làm chữ trong suốt để lộ màu nền */
+    background-size: 400% auto;
+
+    /* Chạy 2 hiệu ứng cùng lúc: Đổi màu và Nhấp nháy */
+    animation: rainbow_move 3s linear infinite, blinker 1s linear infinite;
+}
+
+/* Hiệu ứng trôi màu cầu vồng */
+@keyframes rainbow_move {
+    to { background-position: 400% center; }
+}
+
+/* Hiệu ứng nhấp nháy (ẩn/hiện) */
+@keyframes blinker {
+    50% { opacity: 0; }
+}
