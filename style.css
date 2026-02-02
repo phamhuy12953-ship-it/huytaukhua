@@ -90,3 +90,17 @@ h2, p {
     margin: 0 !important;
     padding: 10px 0;        /* Chỉnh khoảng cách chữ bằng cái này */
 }
+/* Thêm đoạn này vào cuối file style.css để căn giữa toàn bộ */
+.top-section, .middle-section, .bottom-section, .spacer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* Căn giữa ngang */
+    text-align: center !important;  /* Căn giữa chữ */
+    justify-content: center !important;
+}
+
+/* Đảm bảo các thẻ con bên trong cũng ra giữa */
+.top-section *, .middle-section *, .bottom-section * {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
