@@ -1,29 +1,29 @@
 body {
-    /* Tạo màu chuyển từ xanh biển sang màu da theo đường chéo */
+    /* Màu nền xẻ ngang từ xanh sang da */
     background: linear-gradient(135deg, #2193b0, #ffbc67);
     
-    /* Làm cho nền phủ kín toàn bộ màn hình */
-    height: 100vh;
-    margin: 0;
+    /* Bỏ lệnh 100vh để trang web có thể dài ra tùy ý */
+    min-height: 200vh; /* Tạo chiều cao gấp đôi màn hình để bạn thử kéo chuột */
     
-    /* Căn chữ ra chính giữa màn hình */
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    
+    /* Căn giữa nội dung nhưng cho phép cuộn từ trên xuống */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    
-    /* Màu chữ và font chữ */
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Tạo bóng cho chữ dễ đọc */
+    padding-top: 100px; /* Cách mép trên một khoảng */
 }
 
 h1 {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
+    font-size: 3rem;
 }
 
-p {
-    font-size: 1.5rem;
-    opacity: 0.9;
+/* Thêm một cái khung nội dung dài để có cái mà kéo */
+.content-box {
+    margin-top: 500px; /* Đẩy nội dung xuống thật xa để bạn phải cuộn chuột */
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
 }
