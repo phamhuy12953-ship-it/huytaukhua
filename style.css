@@ -75,3 +75,18 @@ html, body {
     color: white;
     text-align: center;
 }
+    /* 2. Ép tất cả các phần phải sát khít nhau */
+.top-section, .middle-section, .spacer, .bottom-section {
+    margin: 0 !important;   /* Xóa sạch margin để không bị hở khe trắng */
+    padding-top: 20px;      /* Dùng padding để tạo khoảng cách bên trong thay vì margin */
+    padding-bottom: 20px;
+    width: 100vw !important;
+    border: none !important;
+    display: block !important;
+}
+
+/* 3. QUAN TRỌNG: Xóa margin của các tiêu đề - Nguyên nhân chính gây hở khe */
+h2, p {
+    margin: 0 !important;
+    padding: 10px 0;        /* Chỉnh khoảng cách chữ bằng cái này */
+}
