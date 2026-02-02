@@ -43,11 +43,39 @@ body {
     display: block; /* Xác định nó là một khối riêng biệt */
 }
 
+/* Đây là phần dải màu ở cuối trang */
 .bottom-section {
-    height: 50vh;
-    padding-top: 50px;
-    background: #333;
+    background: linear-gradient(to right, #2c3e50, #4ca1af); /* Màu tối cho sang, hoặc thay màu bạn thích */
+    width: 100%;
+    padding: 10px 0; /* Số 10px này càng nhỏ thì dải màu càng mỏng */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa tất cả nội dung bên trong */
+    justify-content: center;
+    color: white;
 }
+
+/* Căn giữa chữ Hết Phim và các text khác */
+.bottom-section p, .bottom-section h2 {
+    margin: 5px 0; /* Giảm khoảng cách giữa các dòng để nó mỏng lại */
+    text-align: center;
+}
+
+/* Link Facebook cầu vồng nhấp nháy */
+.rainbow-link {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% auto;
+    animation: rainbow_move 3s linear infinite, blinker 1s linear infinite;
+    display: inline-block;
+}
+
+@keyframes rainbow_move { to { background-position: 400% center; } }
+@keyframes blinker { 50% { opacity: 0; } }
 a:hover {
     color: #ffbc67; /* Khi rê chuột vào, link sẽ đổi sang màu da */
     text-decoration: underline; /* Hiện lại gạch chân khi rê chuột */
