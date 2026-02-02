@@ -37,10 +37,17 @@ body {
 }
 
 .spacer {
-    height: 1000px; /* Độ cao bạn muốn để kéo trang dài ra */
-    width: 100%;    /* Đảm bảo nó chiếm hết chiều ngang */
-    margin: 0 auto; /* Căn giữa tự động */
-    display: block; /* Xác định nó là một khối riêng biệt */
+    /* 1. Độ dày: Chỉnh số này nhỏ lại (ví dụ 2px hoặc 5px) để nó thật mỏng */
+    height: 3px; 
+    
+    /* 2. Màu sắc: Màu xám nhẹ hoặc màu bạn thích, không cầu vồng */
+    background-color: #444; 
+    
+    /* 3. Căn giữa và khoảng cách */
+    width: 80%;           /* Để nó không chạm mép màn hình cho đẹp */
+    margin: 40px auto;    /* 40px là khoảng cách trên dưới, auto là căn giữa ngang */
+    display: block;
+    border-radius: 10px;  /* Bo tròn nhẹ hai đầu cho tinh tế */
 }
 
 /* Đây là phần dải màu ở cuối trang */
