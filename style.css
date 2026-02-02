@@ -1,26 +1,10 @@
 body {
-    /* Màu nền xẻ ngang */
     background: linear-gradient(135deg, #2193b0, #ffbc67);
-    background-attachment: fixed; /* Giữ nền đứng yên khi cuộn cho đẹp */
-    
     margin: 0;
-    padding: 0;
     color: white;
     font-family: sans-serif;
     text-align: center;
 
-    /* ÉP TRANG WEB DÀI RA */
-    height: 2000px; /* Bạn đặt hẳn 2000px, chắc chắn sẽ thấy thanh cuộn */
-}
-
-h1 {
-    padding-top: 100px;
-    font-size: 3rem;
-}
-
-.bottom-text {
-    margin-top: 1500px; /* Đẩy dòng chữ này xuống cực thấp */
-    font-size: 2rem;
-    background: rgba(0,0,0,0.5);
-    padding: 20px;
+    /* Dòng này quan trọng nhất: ép chiều cao trang web dài gấp 3 lần màn hình */
+    height: 300vh; 
 }
