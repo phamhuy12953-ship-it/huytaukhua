@@ -1,8 +1,7 @@
 body {
-    background-color: lightblue;
+    background-color: #0077b6; /* Đây là mã màu xanh nước biển đậm */
+    color: white;             /* Đổi chữ sang màu trắng cho dễ đọc trên nền xanh */
     text-align: center;
-    font-family: Arial;
-}
-h1 {
-    color: red;
+    font-family: sans-serif;
+    padding-top: 50px;
 }
