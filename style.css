@@ -37,28 +37,28 @@ body {
 }
 
 /* Bước 1: Xóa lề mặc định của trình duyệt để không bị hở viền trắng */
-body {
+/* BẮT BUỘC: Xóa bỏ lề mặc định của trang web để không bị hở viền trắng */
+html, body {
     margin: 0 !important;
     padding: 0 !important;
-    overflow-x: hidden; /* Ngăn hiện thanh cuộn ngang do 100vw */
+    width: 100% !important;
+    overflow-x: hidden; /* Ngăn thanh cuộn ngang xuất hiện */
 }
 
-/* Bước 2: Chỉnh dải màu xanh-da nằm dưới các phần trên */
 .spacer {
-    /* Full toàn bộ chiều ngang màn hình */
-    width: 100vw !important; 
+    /* 1. ÉP FULL VIỀN: Tràn toàn bộ chiều rộng màn hình */
+    width: 100vw !important;
     
-    /* Độ dày: chỉnh theo ý bạn (ví dụ 40px hoặc 60px) */
+    /* 2. ĐỘ DÀY: Bạn có thể chỉnh 50px, 80px hoặc hơn tùy ý */
     height: 900px !important; 
 
-    /* Màu xanh mượt hòa với màu da như lúc đầu */
+    /* 3. MÀU SẮC: Xanh hòa lẫn màu da (Gradient) */
     background: linear-gradient(to right, #4ca1af, #f7bb97) !important;
 
-    /* Xóa mọi lề hở xung quanh */
-    margin: 0 !important; 
-    padding: 0 !important;
-    border: none !important;
+    /* 4. VỊ TRÍ: Đảm bảo nằm sát mép trái */
     display: block !important;
+    border: none !important;
+    margin: 10px 0 !important; /* Khoảng cách trên dưới 10px, hai bên bằng 0 */
 }
 /* Đây là phần dải màu ở cuối trang */
 .bottom-section {
