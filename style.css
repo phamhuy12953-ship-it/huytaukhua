@@ -36,18 +36,18 @@ body {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Thêm bóng cho chữ dễ đọc hơn */
 }
 
-.spacer {
-    /* 1. Độ dày: Chỉnh số này nhỏ lại (ví dụ 2px hoặc 5px) để nó thật mỏng */
+    .spacer {
+    /* Màu xanh nhạt hòa lẫn màu da */
+    background: linear-gradient(to right, #a8e6cf, #ffd3b6); 
+    
+    /* Độ mỏng: chỉnh số này lên 10px nếu muốn dày hơn chút */
     height: 3px; 
     
-    /* 2. Màu sắc: Màu xám nhẹ hoặc màu bạn thích, không cầu vồng */
-    background-color: #444; 
-    
-    /* 3. Căn giữa và khoảng cách */
-    width: 80%;           /* Để nó không chạm mép màn hình cho đẹp */
-    margin: 40px auto;    /* 40px là khoảng cách trên dưới, auto là căn giữa ngang */
+    /* Căn giữa và tạo khoảng cách trên dưới */
+    width: 90%;           /* Không chạm mép màn hình */
+    margin: 20px auto;    /* 20px là khoảng cách với nội dung trên và dưới */
+    border-radius: 50px;  /* Làm hai đầu dải màu bo tròn cho mượt */
     display: block;
-    border-radius: 10px;  /* Bo tròn nhẹ hai đầu cho tinh tế */
 }
 
 /* Đây là phần dải màu ở cuối trang */
