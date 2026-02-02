@@ -36,20 +36,30 @@ body {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Thêm bóng cho chữ dễ đọc hơn */
 }
 
-.spacer {
-    /* 1. ĐỘ DÀY: Bạn muốn dày hay mỏng thì chỉnh số này (ví dụ 10px, 20px, 50px) */
-    height: 30px !important; 
-
-    /* 2. MÀU SẮC: Xanh hòa lẫn màu da (Gradient) */
-    background: linear-gradient(to right, #4ca1af, #f7bb97) !important;
-
-    /* 3. HIỂN THỊ: Đảm bảo nó không bị ẩn hay bị màu trắng đè */
-    display: block !important;
-    width: 100% !important;
-    margin: 10px 0 !important;
-    border: none !important;
+/* Bước quan trọng nhất: Xóa lề trắng xung quanh trang web */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden; /* Ngăn hiện thanh cuộn ngang */
 }
 
+.spacer {
+    /* 1. Phủ kín 100% chiều ngang màn hình */
+    width: 100vw !important;  /* vw là đơn vị dựa trên chiều rộng màn hình */
+    position: relative;
+    left: 0;
+    
+    /* 2. Độ dày theo ý bạn (tăng/giảm số này tùy thích) */
+    height: 80px !important; 
+
+    /* 3. Màu xanh - da hòa lẫn (Gradient) */
+    background: linear-gradient(to right, #4ca1af, #f7bb97) !important;
+
+    /* 4. Xóa các khoảng cách thừa */
+    margin: 20px 0 !important;
+    border: none !important;
+    display: block !important;
+}
 /* Đây là phần dải màu ở cuối trang */
 .bottom-section {
     background: linear-gradient(to right, #2c3e50, #4ca1af); /* Màu tối cho sang, hoặc thay màu bạn thích */
