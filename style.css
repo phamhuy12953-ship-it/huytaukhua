@@ -36,27 +36,27 @@ body {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Thêm bóng cho chữ dễ đọc hơn */
 }
 
-/* Bước quan trọng nhất: Xóa lề trắng xung quanh trang web */
+/* Bước 1: Xóa lề mặc định của trình duyệt để không bị hở viền trắng */
 body {
     margin: 0 !important;
     padding: 0 !important;
-    overflow-x: hidden; /* Ngăn hiện thanh cuộn ngang */
+    overflow-x: hidden; /* Ngăn hiện thanh cuộn ngang do 100vw */
 }
 
+/* Bước 2: Chỉnh dải màu xanh-da nằm dưới các phần trên */
 .spacer {
-    /* 1. Phủ kín 100% chiều ngang màn hình */
-    width: 100vw !important;  /* vw là đơn vị dựa trên chiều rộng màn hình */
-    position: relative;
-    left: 0;
+    /* Full toàn bộ chiều ngang màn hình */
+    width: 100vw !important; 
     
-    /* 2. Độ dày theo ý bạn (tăng/giảm số này tùy thích) */
-    height: 1000px !important; 
+    /* Độ dày: chỉnh theo ý bạn (ví dụ 40px hoặc 60px) */
+    height: 900px !important; 
 
-    /* 3. Màu xanh - da hòa lẫn (Gradient) */
+    /* Màu xanh mượt hòa với màu da như lúc đầu */
     background: linear-gradient(to right, #4ca1af, #f7bb97) !important;
 
-    /* 4. Xóa các khoảng cách thừa */
-    margin: 20px 0 !important;
+    /* Xóa mọi lề hở xung quanh */
+    margin: 0 !important; 
+    padding: 0 !important;
     border: none !important;
     display: block !important;
 }
