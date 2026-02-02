@@ -38,6 +38,7 @@ body {
 
 /* Bước 1: Xóa lề mặc định của trình duyệt để không bị hở viền trắng */
 /* BẮT BUỘC: Xóa bỏ lề mặc định của trang web để không bị hở viền trắng */
+/* BẮT BUỘC: Xóa sạch lề của toàn bộ trang web */
 html, body {
     margin: 0 !important;
     padding: 0 !important;
@@ -45,36 +46,32 @@ html, body {
     overflow-x: hidden; /* Ngăn thanh cuộn ngang xuất hiện */
 }
 
+/* 1. Chỉnh dải màu xanh-da FULL VIỀN */
 .spacer {
-    /* 1. ÉP FULL VIỀN: Tràn toàn bộ chiều rộng màn hình */
-    width: 100vw !important;
-    
-    /* 2. ĐỘ DÀY: Bạn có thể chỉnh 50px, 80px hoặc hơn tùy ý */
-    height: 900px !important; 
-
-    /* 3. MÀU SẮC: Xanh hòa lẫn màu da (Gradient) */
+    width: 100vw !important;      /* Full chiều ngang màn hình */
+    height: 900px !important;      /* Độ dày dải màu */
     background: linear-gradient(to right, #4ca1af, #f7bb97) !important;
-
-    /* 4. VỊ TRÍ: Đảm bảo nằm sát mép trái */
-    display: block !important;
+    margin: 0 !important;         /* Xóa lề để nó khít với các phần khác */
     border: none !important;
-    margin: 10px 0 !important; /* Khoảng cách trên dưới 10px, hai bên bằng 0 */
+    display: block !important;
 }
-/* Đây là phần dải màu ở cuối trang */
+
+/* 2. Chỉnh phần cuối (Footer) FULL VIỀN */
 .bottom-section {
-    background: linear-gradient(to right, #2c3e50, #4ca1af); /* Màu tối cho sang, hoặc thay màu bạn thích */
-    width: 100%;
-    padding: 10px 0; /* Số 10px này càng nhỏ thì dải màu càng mỏng */
+    width: 100vw !important;      /* Ép phần cuối rộng hết màn hình */
+    background-color: #2c3e50;    /* Màu nền tối bạn đang dùng */
+    padding: 20px 0 !important;   /* Độ dày của phần footer */
+    margin: 0 !important;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Căn giữa tất cả nội dung bên trong */
+    align-items: center;          /* Căn giữa nội dung bên trong */
     justify-content: center;
-    color: white;
+    border: none !important;
 }
 
-/* Căn giữa chữ Hết Phim và các text khác */
-.bottom-section p, .bottom-section h2 {
-    margin: 5px 0; /* Giảm khoảng cách giữa các dòng để nó mỏng lại */
+/* Chỉnh chữ trong phần cuối cho đẹp */
+.bottom-section h2, .bottom-section p {
+    margin: 5px 0;
+    color: white;
     text-align: center;
 }
-
