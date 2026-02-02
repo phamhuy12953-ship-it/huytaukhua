@@ -1,14 +1,19 @@
 body {
-    margin: 0;
-    padding: 0;
-    /* Màu nền xẻ ngang từ xanh sang da */
-    background: linear-gradient(135deg, #2193b0, #ffbc67);
-    background-attachment: fixed;
-    color: white;
-    font-family: Arial, sans-serif;
+/* Nếu bạn muốn xóa hẳn cái dải màu da đó đi */
+.fb-container {
+    background: none !important; /* Xóa sạch màu nền cũ */
     text-align: center;
+    padding: 20px;
 }
 
+/* Hoặc nếu muốn làm một cái khung nền đen mờ cho chuyên nghiệp */
+.fb-container {
+    background: rgba(0, 0, 0, 0.6); /* Đen mờ 60% */
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px auto;
+    width: fit-content; /* Khung chỉ ôm vừa khít cái chữ thôi */
+}
 .top-section {
     /* Đường dẫn đến ảnh của bạn */
     background-image: url('anh1.png'); 
