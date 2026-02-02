@@ -36,18 +36,15 @@ body {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Thêm bóng cho chữ dễ đọc hơn */
 }
 
-    .spacer {
-    /* Màu xanh nhạt hòa lẫn màu da */
-    background: linear-gradient(to right, #a8e6cf, #ffd3b6); 
+.spacer {
+    /* Ép buộc màu xanh hòa lẫn màu da */
+    background: linear-gradient(to right, #a8e6cf, #ffd3b6) !important; 
     
-    /* Độ mỏng: chỉnh số này lên 10px nếu muốn dày hơn chút */
-    height: 3px; 
-    
-    /* Căn giữa và tạo khoảng cách trên dưới */
-    width: 90%;           /* Không chạm mép màn hình */
-    margin: 20px auto;    /* 20px là khoảng cách với nội dung trên và dưới */
-    border-radius: 50px;  /* Làm hai đầu dải màu bo tròn cho mượt */
-    display: block;
+    height: 8px !important;   /* Tăng độ dày một chút để dễ thấy */
+    width: 100% !important;   /* Cho tràn hết màn hình cho chắc chắn */
+    margin: 20px 0 !important;
+    display: block !important;
+    border: none !important;  /* Xóa mọi viền trắng nếu có */
 }
 
 /* Đây là phần dải màu ở cuối trang */
@@ -68,47 +65,3 @@ body {
     text-align: center;
 }
 
-/* Link Facebook cầu vồng nhấp nháy */
-.rainbow-link {
-    font-weight: bold;
-    font-size: 18px;
-    text-decoration: none;
-    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400% auto;
-    animation: rainbow_move 3s linear infinite, blinker 1s linear infinite;
-    display: inline-block;
-}
-
-@keyframes rainbow_move { to { background-position: 400% center; } }
-@keyframes blinker { 50% { opacity: 0; } }
-a:hover {
-    color: #ffbc67; /* Khi rê chuột vào, link sẽ đổi sang màu da */
-    text-decoration: underline; /* Hiện lại gạch chân khi rê chuột */
-}
-.rainbow-link {
-    text-decoration: none; /* Bỏ gạch chân */
-    font-weight: bold;
-    font-size: 20px;
-    display: inline-block;
-
-    /* Tạo dải màu cầu vồng */
-    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
-    -webkit-background-clip: text; /* Cắt nền theo dáng chữ */
-    -webkit-text-fill-color: transparent; /* Làm chữ trong suốt để lộ màu nền */
-    background-size: 400% auto;
-
-    /* Chạy 2 hiệu ứng cùng lúc: Đổi màu và Nhấp nháy */
-    animation: rainbow_move 3s linear infinite, blinker 1s linear infinite;
-}
-
-/* Hiệu ứng trôi màu cầu vồng */
-@keyframes rainbow_move {
-    to { background-position: 400% center; }
-}
-
-/* Hiệu ứng nhấp nháy (ẩn/hiện) */
-@keyframes blinker {
-    50% { opacity: 0; }
-}
