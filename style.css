@@ -10,11 +10,25 @@ body {
 }
 
 .top-section {
-    height: 100vh; /* Chiều cao đúng bằng 1 màn hình */
+    /* Đường dẫn đến ảnh của bạn */
+    background-image: url('anh1.png'); 
+    
+    /* Làm cho ảnh phủ kín toàn bộ phần đầu */
+    background-size: cover; 
+    
+    /* Căn ảnh ở chính giữa */
+    background-position: center;
+    
+    /* Chỉnh độ cao cho phần đầu (bạn có thể tăng giảm số này) */
+    min-height: 300px; 
+    
+    /* Các lệnh cũ của bạn giữ nguyên */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white; /* Để chữ nổi trên nền ảnh */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Thêm bóng cho chữ dễ đọc hơn */
 }
 
 .spacer {
