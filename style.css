@@ -32,8 +32,10 @@ body {
 }
 
 .spacer {
-    height: 200vh; /* Tạo một khoảng trống dài gấp 2 lần màn hình */
-    background: rgba(0, 0, 0, 0.1); /* Màu đen mờ để bạn thấy là đang cuộn */
+    height: 1000px; /* Độ cao bạn muốn để kéo trang dài ra */
+    width: 100%;    /* Đảm bảo nó chiếm hết chiều ngang */
+    margin: 0 auto; /* Căn giữa tự động */
+    display: block; /* Xác định nó là một khối riêng biệt */
 }
 
 .bottom-section {
