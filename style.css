@@ -27,3 +27,7 @@ body {
     padding-top: 50px;
     background: #333;
 }
+a:hover {
+    color: #ffbc67; /* Khi rê chuột vào, link sẽ đổi sang màu da */
+    text-decoration: underline; /* Hiện lại gạch chân khi rê chuột */
+}
