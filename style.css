@@ -1,10 +1,29 @@
 body {
-    background: linear-gradient(135deg, #2193b0, #ffbc67);
     margin: 0;
+    padding: 0;
+    /* Màu nền xẻ ngang từ xanh sang da */
+    background: linear-gradient(135deg, #2193b0, #ffbc67);
+    background-attachment: fixed;
     color: white;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
+}
 
-    /* Dòng này quan trọng nhất: ép chiều cao trang web dài gấp 3 lần màn hình */
-    height: 300vh; 
+.top-section {
+    height: 100vh; /* Chiều cao đúng bằng 1 màn hình */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spacer {
+    height: 200vh; /* Tạo một khoảng trống dài gấp 2 lần màn hình */
+    background: rgba(0, 0, 0, 0.1); /* Màu đen mờ để bạn thấy là đang cuộn */
+}
+
+.bottom-section {
+    height: 50vh;
+    padding-top: 50px;
+    background: #333;
 }
