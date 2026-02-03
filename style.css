@@ -175,9 +175,7 @@ h2, p {
     object-fit: cover;
     margin-bottom: 15px;
   }
-</style>
-<style>
-  @keyframes rainbow-blink {
+      @keyframes rainbow-blink {
     0% { color: #ff0000; text-shadow: 0 0 10px #ff0000; }   /* Đỏ */
     20% { color: #ff00ff; text-shadow: 0 0 10px #ff00ff; }  /* Hồng */
     40% { color: #0000ff; text-shadow: 0 0 10px #0000ff; }  /* Xanh dương */
@@ -192,4 +190,5 @@ h2, p {
     animation: rainbow-blink 0.5s step-end infinite; 
   }
 </style>
+
 
