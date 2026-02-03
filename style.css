@@ -49,7 +49,7 @@ html, body {
 /* 1. Chỉnh dải màu xanh-da FULL VIỀN */
 .spacer {
     width: 100vw !important;      /* Full chiều ngang màn hình */
-    height: 900px !important;      /* Độ dày dải màu */
+    height: 950px !important;      /* Độ dày dải màu */
     background: linear-gradient(to right, #4ca1af, #f7bb97) !important;
     margin: 0 !important;         /* Xóa lề để nó khít với các phần khác */
     border: none !important;
