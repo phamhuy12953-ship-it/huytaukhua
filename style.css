@@ -16,7 +16,7 @@ body {
 }
 .top-section {
     /* Đường dẫn đến ảnh của bạn */
-    background-image: url('anh1.png'); 
+    background-image: url('anh4.png'); 
     
     /* Làm cho ảnh phủ kín toàn bộ phần đầu */
     background-size: cover; 
