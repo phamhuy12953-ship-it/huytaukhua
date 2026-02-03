@@ -175,28 +175,21 @@ h2, p {
     object-fit: cover;
     margin-bottom: 15px;
   }
-    .rainbow-text {
-  /* Tạo dải màu cầu vồng */
-  background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
-  
-  /* Áp dụng dải màu lên chữ thay vì lên nền */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-
-  /* Thiết lập kích thước nền để nó có thể chạy qua lại */
-  background-size: 400% 100%;
-  
-  /* Hiệu ứng chuyển động màu nhấp nháy/chạy */
-  animation: rainbow-move 3s linear infinite;
-  
-  font-weight: bold;
-}
-
-/* Định nghĩa chuyển động của dải màu */
-@keyframes rainbow-move {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
 </style>
+<style>
+  @keyframes rainbow-blink {
+    0% { color: #ff0000; text-shadow: 0 0 10px #ff0000; }   /* Đỏ */
+    20% { color: #ff00ff; text-shadow: 0 0 10px #ff00ff; }  /* Hồng */
+    40% { color: #0000ff; text-shadow: 0 0 10px #0000ff; }  /* Xanh dương */
+    60% { color: #00ffff; text-shadow: 0 0 10px #00ffff; }  /* Xanh băng */
+    80% { color: #00ff00; text-shadow: 0 0 10px #00ff00; }  /* Xanh lá */
+    100% { color: #ffff00; text-shadow: 0 0 10px #ffff00; } /* Vàng */
+  }
+
+  .rainbow-blink-text {
+    font-weight: bold;
+    /* Tốc độ 0.2s sẽ làm nó nháy rất nhanh và gắt */
+    animation: rainbow-blink 0.5s step-end infinite; 
+  }
+</style>
+
