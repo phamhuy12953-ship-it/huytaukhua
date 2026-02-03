@@ -25,7 +25,7 @@ body {
     background-position: center;
     
     /* Chỉnh độ cao cho phần đầu (bạn có thể tăng giảm số này) */
-    min-height: 1000px; 
+    min-height: 980px; 
     
     /* Các lệnh cũ của bạn giữ nguyên */
     display: flex;
