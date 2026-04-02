@@ -8,6 +8,6 @@
 <body>
     <h1>Casino nhà cái hàng đầu VN</h1>
     <p>spell</p>
-    <img src="anh1.png" style="width: 100%; max-width: 500px; border-radius: 10px; border: 2px solid white;">
+    <img src="Screenshot 2026-03-26 214830.png" style="width: 100%; max-width: 500px; border-radius: 10px; border: 2px solid white;">
 </body>
 </html>
